@@ -254,7 +254,7 @@
 
   set page(
     paper: paper-size,
-    margin: (left: 15mm, right: 15mm, top: 10mm, bottom: 10mm),
+    margin: (left: 15mm, right: 15mm, top: 10mm, bottom: if show-footer { 20mm } else { 10mm }),
     footer: if show-footer [#__resume_footer(
       author,
       language,
@@ -262,7 +262,7 @@
       date,
       use-smallcaps: use-smallcaps,
     )] else [],
-    footer-descent: 0pt,
+    footer-descent: 35%,
   )
 
   // set paragraph spacing
@@ -771,7 +771,7 @@
 
   set page(
     paper: paper-size,
-    margin: (left: 15mm, right: 15mm, top: 10mm, bottom: 10mm),
+    margin: (left: 15mm, right: 15mm, top: 10mm, bottom: if show-footer { 20mm } else { 10mm }),
     footer: if show-footer [#__coverletter_footer(
       author,
       language,
@@ -779,7 +779,7 @@
       lang_data,
       use-smallcaps: use-smallcaps,
     )] else [],
-    footer-descent: 2mm,
+    footer-descent: 35%,
   )
 
   // set paragraph spacing
