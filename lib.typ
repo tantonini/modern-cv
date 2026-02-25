@@ -597,6 +597,17 @@
   justified-header(certification, date)
 }
 
+#let resume-training-course(organization, training, date) = {
+grid(
+  columns: (6fr, 1fr, 1fr),
+  gutter: 5pt,
+  align: (left, left, right),
+  [== #training],
+  [=== #organization],
+  [#tertiary-right-header[#date]]
+)
+}
+
 /// Styling for resume skill categories.
 /// - category (string): The category
 #let resume-skill-category(category) = {
