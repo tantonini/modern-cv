@@ -303,7 +303,7 @@
               weight: "thin",
             )[#author.firstname]
           ] else [
-            #text(accent-color, weight: "thin")[#author.firstname]
+            #text(weight: "thin")[#author.firstname]
             #text(weight: "bold")[#author.lastname]
           ]
         ]
