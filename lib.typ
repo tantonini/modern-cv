@@ -110,9 +110,7 @@
 
 #let __resume_footer(author, language, lang_data, date, use-smallcaps: true) = {
   set text(fill: gray, size: 8pt)
-  __justify_align_3[
-    #__apply_smallcaps(date, use-smallcaps)
-  ][
+  __justify_align_3[][
     #__apply_smallcaps(
       {
         let name = __format_author_name(author, language)
