@@ -390,6 +390,18 @@
         ),
       )
     }
+    if "linkedin" in author {
+      items.push(
+        contact-item(
+          (
+            text: author.firstname + " " + author.lastname,
+            icon: linkedin-icon,
+            link: author.linkedin,
+          ),
+          link-prefix: "https://www.linkedin.com/in/",
+        ),
+      )
+    }
     if "github" in author {
       items.push(
         contact-item(
@@ -411,18 +423,6 @@
         contact-item(
           (text: author.bitbucket, icon: bitbucket-icon, link: author.bitbucket),
           link-prefix: "https://bitbucket.org/",
-        ),
-      )
-    }
-    if "linkedin" in author {
-      items.push(
-        contact-item(
-          (
-            text: author.firstname + " " + author.lastname,
-            icon: linkedin-icon,
-            link: author.linkedin,
-          ),
-          link-prefix: "https://www.linkedin.com/in/",
         ),
       )
     }
