@@ -312,7 +312,7 @@
   }
 
   let positions = {
-    set text(accent-color, size: 9pt, weight: "regular")
+    set text(accent-color, size: 12pt, weight: "regular")
     align(center)[
       #__apply_smallcaps(
         author.positions.join(text[#"  "#sym.dot.c#"  "]),
