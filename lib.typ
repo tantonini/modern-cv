@@ -633,7 +633,7 @@ grid(
 /// - values (array): The skills to display
 #let resume-skill-values(values) = {
   align(left)[
-    #set text(size: 11pt, style: "normal", weight: "light")
+    #set text(size: 10pt, style: "normal", weight: "light")
     // This is a list so join by comma (,)
     #values.join(", ")
   ]
