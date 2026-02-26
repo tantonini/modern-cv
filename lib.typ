@@ -535,6 +535,18 @@
   body
 }
 
+#let resume-summary(body) = {
+  set text(size: 10pt, style: "normal", weight: "light", fill: color-darknight)
+  set block(above: 0.75em, below: 1.25em)
+  set par(leading: 0.65em)
+  set align(center)
+  block(above: 0.5em)[
+    #linebreak(justify: false)
+    #body
+    #linebreak(justify: true)
+  ]
+}
+
 /// The base item for resume entries.
 /// This formats the item for the resume entries. Typically your body would be a bullet list of items. Could be your responsibilities at a company or your academic achievements in an educational background section.
 /// - body (content): The body of the resume entry
